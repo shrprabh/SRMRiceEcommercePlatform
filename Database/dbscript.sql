@@ -142,6 +142,13 @@ CREATE TABLE IF NOT EXISTS Cart (
     FOREIGN KEY (Product_id) REFERENCES Product_tbl(Product_id)
 );
 
+ALTER TABLE Orders_tbl DROP FOREIGN KEY orders_tbl_ibfk_2;
+ALTER TABLE Salary_tbl DROP FOREIGN KEY salary_tbl_ibfk_1;
+ALTER TABLE Employee_tbl MODIFY COLUMN Employee_id INT AUTO_INCREMENT;
+ALTER TABLE Orders_tbl
+ADD CONSTRAINT orders_tbl_ibfk_2 FOREIGN KEY (Employee_id) REFERENCES Employee_tbl(Employee_id);
+ALTER TABLE Salary_tbl
+ADD CONSTRAINT salary_tbl_ibfk_1 FOREIGN KEY (Employee_id) REFERENCES Employee_tbl(Employee_id);
 
 -- Inserting sample records into each table
 -- [Insert statements...]
