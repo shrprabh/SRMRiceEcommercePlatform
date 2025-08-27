@@ -20,8 +20,8 @@ SRM Rice E-commerce Platform is a comprehensive online marketplace specifically 
 ## 🛠️ Tech Stack
 
 - **Frontend**: HTML5, CSS3, JavaScript, React.js
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
+- **Backend**: EF core and ASP.NET Core
+- **Database**: Microsoft SQL
 - **Authentication**: JWT, OAuth
 - **Payment Processing**: Stripe Integration
 - **Deployment**: Docker, AWS/Azure
